@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html class="gr__demo10_onihaxymediaweb_com_ng" prefix="og: http://ogp.me/ns#" lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> <script crossorigin="*" charset="UTF-8" src="DashBoard_files/default.js" async=""></script><script src="DashBoard_files/recaptcha__en.js" async="" type="text/javascript"></script><script src="DashBoard_files/api.js"></script>
+   <meta charset="utf-8">
+   <meta name="generator" content="FlashWebTech">
+    <meta name="generator" content="FlashWebTech Inc">
+	 <meta name="author" content="FlashWebTech">
+	 <meta name="author" content="FlashWebTech Inc">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="discription" content="Member to Member Donation">
+<meta name="keywords" content="Member to Member Donation Hub,FlashWebTech Inc,FlashWebTech,Devoloped by FlashWebTech Inc">
+<style>
+body{background:url('https://demo10.onihaxymediaweb.com.ng/images/Server-Room-1.jpg')no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 0.9;
+}
+div.r-col-md-1{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-2{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-3{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-4{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-5{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-6{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-7{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-8{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-9{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-10{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-11{
+	background:red;color:black;padding:6px;
+}
+div.r-col-md-12{
+	background:red;color:black;padding:6px;
+}
+.boda{
+	background:white;
+}
+*:focus {
+    outline: none;
+}
+$page-bg: #282F32;
+$light-blue: #3599FF;
+$bright-blue: #68B3FF;
+$light-gray: #999;
+//$curve: cubic-bezier(0, 0, 0.52, 1.11);
+$curve: linear;
+.b,span[type=text],.labelroi{padding:8px;color:#fff;font-weight:bold;font-size:20px;margin-left:12px;}
+.labelroi{padding:8px;height:40px;border:1px solid blue;background:black;color:#fff;font-weight:bold;margin-left:4px;}
+labels,.label{padding:10px;border:1px solid grey;background:black;color:#fff;font-weight:bold;margin-left:0px;margin-top:10px;}
+label{font-weight:bold;color:grey;text-transform:uppercase;}
+.hidden{display:none;}
+.jer{border-bottom:8px solid black;}
+.rack{
+	padding:8px;border:2px solid grey;border-radius:25px;height: 40px;}
+.bod{border:4px solid black;}
+button[type=submit], button{
+padding:8px;background:#1589FF;border:0px solid black;border-radius:2px;height: 45px;text-transform:uppercase;}
+select, select>option ,select.input,select.form-control,select.input,input[type=password] ,input[type=text] ,input[type=file], input[type=email] ,input[type=checkbox]{
+	font-weight:bold;padding:8px;border-top:0px;border-left:0px;border-bottom:4px solid #999;border-radius:0px;height:45px;}
+
+	div.panel-heading{background:#fff;url("/images/bg1.jpg");color:#000000; -webkit-box-shadow: -11px 25px 12px -7px rgba(71,41,69,0.09);
+-moz-box-shadow: -11px 25px 12px -7px rgba(71,41,69,0.09);
+box-shadow: -11px 25px 12px -7px rgba(71,41,69,0.09);border:1px solid #fff;border-top-right-radius:0px;border-top-left-radius:0px;}
+div.panel ,div.panel-default{background:#fff;url("/images/bg1.jpg");color:#000000;border:1px solid #f7f7f7;border-radius:1px; }
+p.text-grey ,p.text-center{color:black;}
+.bee{font-weight:bold;}
+.bee:hover{color:white;}
+meter{height:20px;width:90%;margin-left:12px;margin-right:10px;}
+/* Bader CSS */
+.wrappers {
+  background-color: #FFF;
+  border-radius: 2px;
+  z-index:1;opacity: 0.8;
+  box-shadow: 0px 2px 1px 0px #DDD;
+  box-sizing: border-box;
+  
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  color: #555;
+  box-sizing: border-box;
+  font-family: 'Arvo';
+  font-size: 18px;
+  height: 50px;
+  //left: 50%;
+  //margin: -25px 0 0 -100px;
+  padding: 10px 0px;
+  //position: relative;
+  //top: 50%;
+  width: 100%;
+
+  &:focus {
+    outline: none;  
+border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;	
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: dodgerblue;
+}
+input:focus{
+ outline: mone;
+}
+
+.input:focus+.underline {
+  transform: scale(1);
+}
+
+.underline {
+  background-color: dodgerblue;
+  padding:2px;
+  display: inline-block;
+  height: 2px;
+  //left: 5%;
+  margin-top: -4px;
+  position: absolute;
+  //top: 100px;
+  -webkit-transform: scale(0, 7);
+  transform: scale(0, 7);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  width: 91%;
+}
+@media screen and (min-width: 768px){
+            .break { display: none; }
+        }
+		.f-legend {
+  height: 15px;
+  width:100%;
+  border-bottom: solid 2px grey;
+  text-align: center;
+  margin: 2em 0;
+}
+.f-legend span {
+  background: #fff;
+  position: relative;
+  top: 0;
+  padding: 0 20px;
+  line-height:30px;
+}
+.m-or{
+background:#FF6600;border:2px solid #E5E4E2;color:red;padding:25px;font-weight:bold;font-weight:bold;	
+}
+@media screen and (min-width: 0px) and (max-width: 720px){
+.pc-or{
+	display:none;
+  }
+}
+.pc-or{
+	font-weight:bold;
+}
+</style>
+<meta name="theme-color" content="black">
+
+<link rel="shortcut icon" href="https://demo10.onihaxymediaweb.com.ng/images/favicon.png">
+	<link rel="icon" href="https://demo10.onihaxymediaweb.com.ng/images/favicon.png">
+	<title>DashBoard | keeper1.0 No.1 Donation Hub Net</title>	
+</head><body data-gr-c-s-loaded="true" data-ng-app="">
+
+	
+    <!-- Preloader -->
+    
+    <!-- Preloader -->
+    	
+ <!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="DashBoard_files/bootstrap.css"> 
+    
+    <!-- DateTime Picker  -->
+    <link rel="stylesheet" href="DashBoard_files/bootstrap-datetimepicker.css">
+    
+    <!-- Fonts  -->
+    <link href="DashBoard_files/css.css" rel="stylesheet" type="text/css">
+    
+    <!-- Bootstrap Validator  -->
+    <link rel="stylesheet" href="DashBoard_files/bootstrap-validator.htm">
+    
+    <!-- Base Styling  -->
+    <link rel="stylesheet" href="DashBoard_files/app.css">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<!-- Jquery COunter -->
+<script type="text/javascript" src="DashBoard_files/jquery-2.js"></script>
+<script type="text/javascript" src="DashBoard_files/jquery_002.js"></script>
+<link rel="stylesheet" type="text/css" href="DashBoard_files/jquery.css">
+    <script>
+	// makes sure the whole site is loaded
+	jQuery(window).load(function() {
+        // will first fade out the loading animation
+    jQuery(".loading").fadeOut();
+        // will fade out the whole DIV that covers the website.
+    jQuery(".loading-container").delay(1000).fadeOut("slow");
+})
+	
+	</script>
+	<script src="DashBoard_files/jquery_003.js"></script>
+<style>
+.D,.H,.M,.S{
+border-radius:50px;padding:8px;font-weight:bold;display: inline-block;height: 20px;
+position: relative;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #E6F4F7;
+	
+}
+
+.D{
+border:4px solid teal;
+	
+}
+.H{
+border:4px solid green;
+	
+}
+.M{
+border:4px solid blue;
+	
+}
+.S{
+border:4px solid purple;
+	
+}
+
+</style>
+
+<aside tabindex="5000" class="left-panel scrollable" style="background-color: teal; overflow: hidden;">
+
+            <div class="user text-centers" style="display:block;color:#ffffff;background:brown;padding:8px;margin-top:0px;">
+			<div style="margin-left:5px;">
+                  <a role="menuitem" href="https://demo10.onihaxymediaweb.com.ng/photo/0.png">
+				  <img src="DashBoard_files/0.png" style="border:0px;border-radius:50px;" alt="Abu" height="70" width="70"></a>
+                  <h4 style="color:#ffffff;" class="user-name"><b>Abu (Abu)</b></h4>
+            
+<span class="user-name">
++233554106347</span>
+
+            </div>
+			</div>
+			<style>
+			a > div.ddf > div.actives{background:auto;color:black;padding:10px;margin-left:12px;font-weight:bold;font-size:15px;}
+			a:hover > div.ddf > div.actives{background:#C0C0C0;padding:10px;}
+			a > div.ddf > div.actives > span.nav-label{margin-left:12px;}
+			.labelg{background:silver;color:black;font-weight:bold;padding:10px;margin-left}
+			.adv {border:2px solid blue;padding:8px;font-weight:bold;}
+			.adx {border:2px solid green;padding:8px;font-weight:bold;}
+			</style>
+            
+            <nav class="navigation" style="background:#ffffff;border-right:1px solid black;">
+            	<ul class="list-unstyled">
+                	<a href="https://demo10.onihaxymediaweb.com.ng/DashBoard">
+					<div class="ddf">
+					<div class="actives">
+					<i class="fa fa-users"></i><span class="nav-label">Dashboard</span>
+					</div></div></a>
+					
+					<a href="https://demo10.onihaxymediaweb.com.ng/AddPackage">
+					<div class="ddf">
+					<div class="actives">
+					<i class="fa fa-credit-card"></i><span class="nav-label">Select Package</span></div></div></a>
+					<a href="https://demo10.onihaxymediaweb.com.ng/Donations">
+					<div class="ddf">
+					<div class="actives">
+					<i class="fa fa-bookmark-o"></i><span class="nav-label">Donation History(s)</span></div></div></a>
+					<a href="https://demo10.onihaxymediaweb.com.ng/Contact">
+					<div class="ddf">
+					<div class="actives">
+					<i class="fa fa-envelope"></i><span class="nav-label">Support Ticket</span></div></div></a>
+					<a href="https://demo10.onihaxymediaweb.com.ng/SiteNews">
+					<div class="ddf">
+					<div class="actives">
+					<i class="fa fa-bullhorn"></i><span class="nav-label">Site News 
+					<span class="badge" style="background:red;"><b>2</b></span></span></div></div></a>
+					                    <a href="https://demo10.onihaxymediaweb.com.ng/LogOut">
+					<div class="ddf">
+					<div class="actives">
+					<i class="fa fa-reply"></i><span class="nav-label">Logout (Abu)</span>
+					</div></div></a>
+				
+                </ul>
+            </nav>
+            <div class="user text-center" style="display:block;background:#ffffff;border-top:2px solid black;margin-top:5px;display:none;">
+			<label class="pull-left">1524126161</label><label class="pull-left">2018/04/19 08:22:41</label>
+ <label class="pull-left">First PH 10%</label>
+ <meter class="meter" max="100" min="0" value="9" low="10" high="20">To GH</meter>
+ <label class="pull-left">Second PH 10%</label>
+ <meter class="meter" max="100" min="0" value="5" low="20" high="50">To GH</meter>
+ <label class="pull-left">First GH 10%</label>
+ <meter class="meter" max="100" min="0" value="45" low="10" high="20">To GH</meter>
+ <label class="pull-left">Second GH 10%</label>
+ <meter class="meter" max="100" min="0" value="45" low="10" high="20">To GH</meter>
+ </div>
+    </aside>
+    <!-- Aside Ends-->     <section class="content">
+    	
+        <header class="top-head container-fluid" style="background:teal ;border-left:2px solid white;">
+            <button type="button" class="navbar-toggle pull-left">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+				
+				 </button>
+				
+            <form role="searchs" class="navbar-left app-searchs pull-left hidden-xs">
+              <a href="https://demo10.onihaxymediaweb.com.ng/"><font size="8"><b>Onihaxy Media Scripts</b></font></a>
+         	</form>
+            
+            <nav class="navbar-default hidden-xss hiddens nav-toolbar bee" role="navigation" style="border:2px solid black;">
+                <ul class="nav navbar-nav">
+                <li class="hidden-xs hidden"><a href="https://demo10.onihaxymediaweb.com.ng/">Home</a></li>
+                <li class="dropdown navbar-default" style="background: dodgerblue;">
+                  <a data-toggle="dropdown" class="dropdown-toggle" href="#" style="margin-right:5px;margin-left:5px;">
+				  <font color="white"><span class="fa fa-user"> </span>
+				   My Profile  <span class="caret"></span></font></a>
+                  <ul role="menu" class="dropdown-menu" style="font-weight:bold;">
+                    <li><a href="https://demo10.onihaxymediaweb.com.ng/EditAccount"><b>Edit Profile Details</b></a></li>
+					<li><a href="https://demo10.onihaxymediaweb.com.ng/EditBank"><b>Edit Bank Details</b></a></li>
+					<li><a href="https://demo10.onihaxymediaweb.com.ng/EditPhoto"><b>Upload Picture</b></a></li>
+                    <li><a href="https://demo10.onihaxymediaweb.com.ng/EditPassWord"><b>Change My Password</b></a></li>
+					
+                
+                    <li class="divider"></li>
+                    <li><a href="https://demo10.onihaxymediaweb.com.ng/LogOut"><b>Logout(Abu)</b></a></li>
+                  </ul>
+                </li>
+				<li class="dropdown hidden-xs hidden"><a href="#" data-toggle="dropdown" style="border:1px solid grey;" title="News/Notifications"><font color="red"><i class="fa fa-bell-o"></i></font><span class="badge" style="background:green;"><b>2</b></span></a>
+                	<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+                        <div class="panel-heading">
+                      	Onihaxy Media Scripts News/Notifications
+                        </div>
+                        
+                        <div class="list-group">
+                                                     <a href="https://demo10.onihaxymediaweb.com.ng/member/read_news.php?id=3" class="list-group-item">
+                            <i class="fa fa-bell-o"> </i> 
+							All must read                             </a>
+						                            <a href="https://demo10.onihaxymediaweb.com.ng/member/read_news.php?id=2" class="list-group-item">
+                            <i class="fa fa-bell-o"> </i> 
+							Update up                            </a>
+						<br><p style="float:right;" align="right">
+			<a href="https://demo10.onihaxymediaweb.com.ng/member/news.php" align="right" class="btn btn-primary">More →</a></p>                        </div>
+                        
+                    </div>
+                </li>
+              </ul>
+            </nav>
+            
+            <ul class="nav-toolbar hidden">
+            	<li class="dropdown" style="display:none;"><a href="#" data-toggle="dropdown"><i class="fa fa-comments-o"></i> <span class="badge bg-warning">1</span></a>
+                	<div class="dropdown-menu md arrow pull-right panel panel-default arrow-top-right messages-dropdown">
+                        <div class="panel-heading">
+                      	Messages
+                        </div>
+                        
+                        <div class="list-group">
+                            
+                            <a href="#" class="list-group-item">
+                            <div class="media">
+                              <div class="user-status busy pull-left">
+                              <img class="media-object img-circle pull-left" src="DashBoard_files/user2.png" alt="user#1" width="40">
+                              </div>
+                              <div class="media-body">
+                                <h5 class="media-heading">We are leading now....</h5>
+                                <small class="text-muted">23 Sec ago</small>
+                              </div>
+                            </div>
+                            </a>
+                           
+                            
+                            <a href="#" class="btn btn-info btn-flat btn-block">View All Messages</a>
+
+                        </div>
+                        
+                    </div>
+                </li>
+				
+                <li class="dropdown"><a href="#" data-toggle="dropdown" style="border:2px solid brown;" title="News/Notifications">
+				<font color="red"><b><i class="fa fa-bell-o"></i></b></font><span class="badge" style="background:green;"><b>2</b></span></a>
+                	<div class="dropdown-menu arrow pull-right md panel panel-default arrow-top-right notifications">
+                        <div class="panel-heading">
+                      	Onihaxy Media Scripts News/Notifications
+                        </div>
+                        
+                        <div class="list-group">
+                         <br><p style="float:right;" align="right">
+			<a href="https://demo10.onihaxymediaweb.com.ng/member/news.php" align="right" class="btn btn-primary" style="border-buttom-right-radius:40px;">More →</a></p>                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <!-- Header Ends --> <style>
+ .fix .fa-spin {
+    -webkit-transform-origin: 50% calc(50% - .5px);
+    transform-origin: 50% calc(50% - .5px);
+}
+ .boda{border:1px solid brown;border-radius:1px;margin-left:4px;margin-right:4px;margin-top:4px;  -webkit-box-shadow: 13px 9px 8px -1px rgba(15,12,12,0.2) ;
+  box-shadow: 13px 9px 8px -1px rgba(15,12,12,0.2) ;}
+ </style>
+             
+              					 
+	<!-- New Code --> 
+	<div class="container-fluids boda">
+	 <br>
+	<div class="row">
+	   <div class="col-md-8">
+	    <div class="col-md-12">
+	     <div class="panel">
+	       <div class="panel-body" style="Overflow:scroll; overflow-y:hidden">
+	                <div class="row">
+                <!-- Welcome -->
+                <div class="col-lg-12">
+                    <div class="alert alert-success">
+                        <i class="fa fa-folder-open"></i><b>&nbsp;Hello ! </b>Welcome Back <b>  Abu </b>
+ We are glad you are here.&nbsp;&nbsp; you have PH <b>0 Times</b> and GH :<b> 0 Times</b>  
+                    </div>
+                </div>
+                <!--end  Welcome -->
+            </div>   
+            
+	       	       <table class="table table-responsive table-bordered">
+	         <thead>
+	           <tr style="color:#fff" bgcolor="#00CCFF">  
+	            <th><b>Total Recieved (GH)</b></th> 
+	            <th><b>Total Paid (PH)</b></th> 
+	            <th><b>Available to Recieve (GH)</b></th> 
+	            <th><b>Available to Pay out (PH)</b></th> 
+	         </tr>     
+	        </thead>
+	        <tbody>
+	            <tr>
+	               <td><h4><i class="fa fa-money"> </i> ¢0</h4></td>
+	               <td><h4><i class="fa fa-bank"> </i> ¢0</h4></td>
+	               <td><h4><i class="fa fa-credit-card"> </i> ¢0			</h4></td>
+	               <td><h4><i class="fa fa-money"> </i> ¢0</h4></td>
+	           </tr>         
+	       </tbody>     
+	       </table> 
+	     </div>
+	    </div> 
+	   </div> 
+	   
+	    <div class="col-md-12">
+	       <div class="panel">
+	       <div class="panel-body" style="Overflow:scroll; overflow-y:hidden">
+	       <table class="table table-responsive table-bordered">
+	         <thead>
+	            <tr style="color:#fff" bgcolor="#00CCFF">
+	            <th><b>Current Package</b></th> 
+	            <th><b>Referral Earnings</b></th> 
+	            <th><b>Total Referred</b></th> 
+	            <th><b>Successfully Referred</b></th> 
+	           </tr> 
+	        </thead>
+	        <tbody>
+	            <tr>
+	               <td><h4><i class="fa fa-tasks"> </i> ¢0</h4></td>
+	               <td><h4><i class="fa fa-users"> </i> ¢0</h4></td>
+	               <td><h4><i class="fa fa-users"> </i> 0</h4></td>
+	               <td><h4><i class="fa fa-check-circle"> </i> 0</h4></td>
+	           </tr>         
+	       </tbody>     
+	       </table>  
+	   </div>
+	  </div> 
+	   </div> 
+	  </div>
+	  <div class="col-md-4">
+        <div class="panel panel-primary">
+   <div class="panel-heading">My Profile</div>
+     <div class="panel-body">
+<h5>Name: Abu Abu</h5><hr>
+<h5>UserName: Abu</h5><hr>
+<h5>Email: Abu@gmail.com<img src="DashBoard_files/verify.png" width="20px"></h5><hr>
+<h5>Phone: +233554106347<img src="DashBoard_files/verify.png" width="20px"></h5><hr>
+<h5>Bank Name: MTN</h5><hr>
+<h5>Acc Name: aaa</h5><hr>
+<h5>Acc No: 1111111111</h5><hr>
+</div>
+		
+		 	 </div>
+ </div> </div>	 
+         
+        </div> 
+        
+         
+        
+<!-- End New Code -->
+<div class="warpers container-fluids boda">
+		<br>
+		<div class="alert alert-danger alert-dismissible" style="text-align:left;margin-left:12px;margin-right:12px;" role="alert">
+		 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span>
+	<span class="sr-only">Close</span></button>
+	<h3><i class="fa fa-warning"> </i> BREAKING NEWS!!!!!!</h3>
+	<b><i class="fa fa-newspaper-o"> </i> ALL MUST READ </b>!
+	<p><br><a class="btn btn-circle" style="border:2px solid red;color:red;padding:8px;font-weight:bold;" href="https://demo10.onihaxymediaweb.com.ng/ReadNews/3">Read News →</a> 
+	<a class="btn btn-circle" style="border:2px solid red;color:red;padding:8px;font-weight:bold;" href="https://demo10.onihaxymediaweb.com.ng/SiteNews?#Flash">See All News →</a> </p>
+	</div>		<!-- TO First Add Money -->
+       <div class="panel panel-primary">      
+		<div class="alert alert-info alert-dismissible" style="text-align:center;border-top-left-radius:50px;border-top-right-radius:0px;" role="alert">
+		<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span>
+	<span class="sr-only">Close</span></button>
+		<h3><span class="fa fa-info"> </span> Hello, Abu You Just → Joined</h3>
+		<font color="red" size="4">↓ Welcome To Onihaxy Media Scripts You Just Join This Community
+  Try and Add Package/Select Plan		To Get Started or Else Your Account will Be Deleted in
+		( <b>3 Days (72 Hours)</b> ) Time If You Fail To Choose Plan Thanks	↓ </font>
+		<hr>
+		<form method="POST" action="https://demo10.onihaxymediaweb.com.ng/AddPackage">
+		<button name="ra" class="btn btn-primary btn-circle" style="padding:8px;font-weight:bold;"> 
+		YES CHOOSE A PACKAGE →</button>
+		</form>		</div>
+		<hr>
+		 <div class="alert panel panel-danger alert-dismissible" style="text-align:center;margin-left:12px;margin-right:12px;" role="alert">
+		 <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span>
+	<span class="sr-only">Close</span></button>
+	<center><strong><h3>Your Account will be Deleted By → 
+	15/Apr/2018 02:14:29 pm		<br><small><font color="red">If you fail to PH </font></small></h3></strong>
+	</center>
+
+	<div id="getting-startedS">
+<span id="D1S" class="D">02 D</span>
+<span id="H1S" class="H">23 H</span>
+<span id="M1S" class="M">50 M</span>
+<span id="S1S" class="S">40 S</span>
+</div>
+<script type="text/javascript">
+  $("#getting-startedS").countdown("2018/04/15 14:14:29", function(event) {
+      $('#D1S').text(event.strftime('%D D'));
+	  $('#H1S').text(event.strftime('%H H'));
+	  $('#M1S').text(event.strftime('%M M'));
+	  $('#S1S').text(event.strftime('%S S'));
+  });
+</script>
+		 </div>
+		 </div>
+		 <!-- End First Add Money -->
+		 		
+		  <div class="container-fluid">
+		  <div class="row">
+		  <div class="container-fluid">
+			<!-- Get Merge -->
+				<script>
+                                $(function(){
+                                    $('#merge_date').countdowntimer({
+                                        dateAndTime : "0",
+                                        size : "lg",
+                                        regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+      					regexpReplaceWith: "$1<sup class='displayformat'>D</sup>/$2<sup class='displayformat'>H</sup>/$3<sup class='displayformat'>M</sup>/$4<sup class='displayformat'>S</sup>"
+                                    });
+                                });
+                            </script>
+							</div>
+							</div>
+					              
+			   
+			   Mobile phone users, scroll right &gt;&gt;&gt;         
+			 </div>    
+			</div>
+			
+		
+			    
+                            
+             
+                     
+	
+					   
+        <!-- Warper Ends Here (working area) -->
+		
+		
+		
+		<div class="row">
+                <div class="col-lg-4">
+                    <!--  Area Chart -->
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Member Chatroom
+                        </div>
+                        <div class="panel-body">
+                            <iframe src="DashBoard_files/a.htm" allowtransparency="yes" marginheight="0" marginwidth="0" scrolling="auto" frameborder="0" height="400" width="100%"></iframe>
+                        </div>
+                    </div>
+                    <!-- End Area Chart -->
+                </div>
+               
+                
+                <div class="col-lg-4">
+                     <!--  Line Chart -->
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Referral Details
+                        </div>
+                        <div class="panel-body">
+                            <label for="email">Referral Link:</label><br>
+        	<input class="form-control" style="border:2px solid brown;margin-bottom:15px;" value="https://demo10.onihaxymediaweb.com.ng/ref/Abu" type="text"><br><br> or <br><label for="email">Referral ID: 40</label><br>
+        	<input class="form-control" style="border:2px solid brown;margin-bottom:15px;" value="40" type="text">
+        <b>Share this to people you want to Refer</b><hr><div align="left">
+	 
+	  </div>                        </div>
+                    </div>
+                     <!--  End Line Chart -->
+                </div>
+                <div class="col-lg-4">
+                     <!--  Donut Chart -->
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            Investment Growth
+                        </div>
+                        <div class="panel-body">
+                        <img src="DashBoard_files/growth-chart.jpg" width="280px">
+                        <center><div class="alert alert-danger alert-dismissible" role="alert">
+                              <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span>
+							  <span class="sr-only">Close</span></button>
+                              <strong>Oops !</strong><ol> You do not have an active Investment or PH, please fund your wallet and provide help!</ol></div></center>                            
+                        </div>
+                    </div>
+                    <!-- End Donut Chart -->
+                </div>
+                
+            </div>
+		
+  <div class="rows hidden">
+<div class="col-md-6">
+     <div class="panel panel-default">
+   <div class="panel-heading">Account Details</div>
+     <div class="panel-body">
+<h4>Name: Abu Abu</h4><hr>
+<h4>UserName: Abu</h4><hr>
+<h4>Email: Abu@gmail.com<img src="DashBoard_files/verify.png" width="20px"></h4><hr>
+<h4>Phone: +233554106347<img src="DashBoard_files/verify.png" width="20px"></h4><hr>
+<h4>Joined: 12/04/2018 02:14pm</h4>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+     <div class="panel panel-default">
+   <div class="panel-heading">Bank Details</div>
+     <div class="panel-body">
+<h4>Bank Name: MTN</h4><hr>
+<h4>Acc Name: aaa</h4><hr>
+<h4>Acc No: 1111111111</h4><hr>
+<h4>Phone: +233554106347<img src="DashBoard_files/verify.png" width="20px"></h4><hr>
+<h4>Status: Active <img src="DashBoard_files/verify.png" width="20px"></h4>
+</div>
+</div>
+</div>
+abcd
+    </div></section>
+    
+  
+	<style type="text/css">
+				.displayformat {
+					font-size:18px;
+					font-style: italic;
+				}
+			    </style>
+			    
+			    hjhj
+				<footer class="container-fluid footer" align="center">
+				<font color="red"><b><i class="fa fa-heart"> </i></b> </font> Onihaxy Media Scripts Brought to you By Onihaxy Media Scripts. 
+				</footer>
+
+ <center><div class="row"><div class="me"><div style="background:#357EC7;padding:8px;color:white;border-top:5px solid black;">
+      © 2018 → ® Onihaxy Media Scripts Concept</div></div></div></center>
+   <!-- JQuery v1.9.1 -->
+	<style>
+                                #main{margin:0px auto; padding:0px; width:900px;position:relative;}
+                                pre{
+                                    background:#F8F8D2;padding:10px;
+                                    border: 2px solid #673E3E;
+                                    border-radius: 3px;
+                                    color: #222222;
+                                }
+                            </style>
+	<!-- Auto Calculate -->
+	<script>
+	$(document).ready(function() {
+   if ($('#query').val() !== '') {
+      $('#reg').submit();
+   }
+});
+</script>
+<script>
+	// Catch all events related to changes
+$('#nos').on('change keyup', function () {
+    // Remove invalid characters
+    var sanitized = $(this).val().replace(/[^-.0-9]/g, '');
+    // Remove non-leading minus signs
+    sanitized = sanitized.replace(/(.)-+/g, '$1');
+    // Remove the first point if there is more than one
+    sanitized = sanitized.replace(/\.(?=.*\.)/g, '');
+    // Update value
+    $(this).val(sanitized);
+});
+</script>
+<script>
+/* Start Group Spend */
+
+/* Allow Numbers Only */
+jQuery(document).ready(
+    function($)
+    {
+        function getTotal(){
+            var $total = 0;
+            var $checkboxes = $('input[type="checkbox"]:checked');
+            var $money = $('#money');
+            
+            $checkboxes.each(
+                function() {
+                    $total += parseInt($(this).val(), 10);
+                }
+            );
+            
+            $total += parseInt($money.val());
+            
+            return $total;
+        }
+        
+        function updateDOM()
+        {
+            var $total_zwei = $('#roi');
+            var $total = $('#inv');
+			var $ben = $('#money').val();
+			if($ben == 0){
+				$('#inv').hide();
+				$('#rarr').hide();
+				$('#roi').hide();
+				$('.labelroi').hide();
+			}
+			else{
+			$('#inv').show();
+			$('#rarr').show();
+			$('#roi').show();	
+			$('.labelroi').show();
+			}
+            $tik = getTotal();
+            $total_zwei.text('¢' + ((0.5 * $tik) + $tik));
+            $total.text('¢' + getTotal());
+        }
+        
+        updateDOM();
+        
+        var $checkboxes = $('input[type="checkbox"]');
+        var $money = $('#money');
+        
+        $checkboxes.on(
+            'change',
+            function()
+            {
+                updateDOM();
+            }
+        );
+        
+        $money.on(
+            'change',
+            function()
+            {
+                updateDOM();
+            }
+        );
+    }
+);
+/* End Group Spend */
+</script>
+	<!-- End -->
+							<script>
+/* Start Group Spend */
+
+/* Allow Numbers Only */
+jQuery('.number').keyup(function () { 
+    this.value = this.value.replace(/[^0-9\.]/g,'');
+});
+
+/* Show/Hide Total */
+$('input[name=amount]').keyup(function(){
+if($(this).val().length)
+$('.group-total-spend').show();
+    else
+    $('.group-total-spend').hide();
+});
+
+/* Calculate Total */
+$(document).ready(function(){
+    $('.group-total-spend').hide();
+    $('#group').hide();
+    $("input.number").keyup(function(){
+          var val1 = parseInt($(".men-value").val(), 10);
+          var val2 = parseInt($(".women-value").val(), 10);
+          var group = val1+val2;
+          var val3 = parseInt($(".amount-value").val(), 10);
+          var tresult = group * val3;
+		  var ppresult = tresult / group;
+        var filled=0;
+        $('input').each(function(){
+            if($(this).val()!='')
+                filled++;
+        });
+        console.log(filled);
+        if(filled==3){
+            $('.group-total-spend').show();
+          $('.total-amount-group').text(tresult);
+		  $('.total-amount-per-person').text(ppresult);
+        }else{
+            $('.group-total-spend').hide();            
+        }
+   });
+    $('select').on('change',function(){
+        if($(this).val()=='per person'){
+            $('#group').hide();
+            $('#person').show();
+        }else{
+            $('#group').show();
+            $('#person').hide();
+        }
+    });
+});
+/* End Group Spend */
+</script>
+<script>
+$('#codes').change(function () {
+    var countryCode = $(this).val();
+
+    if (countryCode) {
+        $('#codes').val(countryCode);
+		$('#codes').show();
+		$('#code-wraps').show();
+		$('#musts').hide();
+    }
+	else{
+	$('#codes').hide();	
+	$('#code-wraps').hide();
+    $('#musts').show();	
+	}
+});
+
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+
+$.fn.focusWithoutScrolling = function(){
+		window.scrollX, y = window.scrollY;
+		this.focus();
+		window.scrollTo(x, y);
+	};
+ $('#code').focusWithoutScrolling();
+</script>
+<script>
+$("#phone").on("keypress keyup",function(){
+    if($(this).val() == '0'){
+      $(this).val('');  
+    }
+});
+var pastValue, pastSelectionStart, pastSelectionEnd;
+$("#phone").on("keydown", function() {
+    pastValue          = this.value;
+    pastSelectionStart = this.selectionStart;
+    pastSelectionEnd   = this.selectionEnd;
+}).on("input propertychange", function() {
+    var regex = /^[0-9]+\.?[0-9]*$/;
+					
+    if (this.value.length > 0 && !regex.test(this.value)) {
+        this.value          = pastValue;
+        this.selectionStart = pastSelectionStart;
+        this.selectionEnd   = pastSelectionEnd;
+    }
+}); 
+document.getElementById('nophone').addEventListener('blur', checkZero)
+
+function checkZero(){
+    var val = this.value;
+    if(val.charAt(0) === '0')
+        this.value = val.slice(1), checkZero.call(this);
+}
+$(function(){
+      
+  $('.number-only').keyup(function(e) {
+        if(this.value!='-')
+          while(isNaN(this.value))
+            this.value = this.value.split('').reverse().join('').replace(/[\D]/i,'')
+                                   .split('').reverse().join('');
+    })
+    .on("cut copy paste",function(e){
+    	e.preventDefault();
+    });
+
+});
+
+</script>
+<script type="text/javascript">
+        function select_all(obj) {
+            var text_val=eval(obj);
+            text_val.focus();
+            text_val.select();
+            if (!r.execCommand) return; // feature detection
+            r = text_val.createTextRange();
+            r.execCommand('copy');
+        }
+    </script>
+	<!-- <script src="https://demo10.onihaxymediaweb.com.ng/assets/member/js/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>-->
+    <script src="DashBoard_files/underscore-min.js"></script>
+    <!-- Bootstrap -->
+    <script src="DashBoard_files/bootstrap.js"></script>
+    
+    <!-- Globalize -->
+    <script src="DashBoard_files/globalize.js"></script>
+    
+    <!-- NanoScroll -->
+    <script src="DashBoard_files/jquery.js"></script>
+    
+    <!-- moment -->
+    <script src="DashBoard_files/moment.js"></script>
+    
+    <!-- DateTime Picker -->
+    <script src="DashBoard_files/bootstrap-datetimepicker.js"></script>
+    
+	<!-- Bootstrap Validator -->
+    <script src="DashBoard_files/bootstrapValidator.js"></script>
+    <script src="DashBoard_files/bootstrapValidator-conf.js"></script>
+    
+    <!-- Custom JQuery -->
+	<script src="DashBoard_files/custom.js" type="text/javascript"></script>
+	<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/58cfdd0d41acfb239f925fe6/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
+	<div style="width: 5px; z-index: auto; cursor: default; position: fixed; top: 0px; left: 225px; height: 656px; display: none;" class="nicescroll-rails" id="ascrail2000"><div style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgb(142, 144, 154); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div style="height: 5px; z-index: auto; top: 651px; left: 0px; position: fixed; cursor: default; display: none;" class="nicescroll-rails" id="ascrail2000-hr"><div style="position: relative; top: 0px; height: 5px; width: 0px; background-color: rgb(142, 144, 154); border: 0px solid rgb(255, 255, 255); background-clip: padding-box; border-radius: 0px;"></div></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; position: fixed ! important; border: 0px none ! important; min-height: 0px ! important; min-width: 0px ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: auto ! important; height: auto ! important; z-index: 2000000000 ! important; cursor: auto ! important; float: none ! important; bottom: 0px ! important; right: 0px ! important; left: auto ! important; display: block;" id="A3I5tSn-1523568156150"><iframe class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: auto ! important; bottom: auto ! important; left: auto ! important; position: static ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 320px ! important; height: 400px ! important; z-index: 999999 ! important; cursor: auto ! important; float: none ! important; display: none ! important;" title="chat widget" scrolling="no" src="DashBoard_files/a_006.htm" id="H7hGhdW-1523568156153" frameborder="0"></iframe><iframe class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; position: fixed ! important; border: 0px none ! important; padding: 0px ! important; transition-property: none ! important; z-index: 1000001 ! important; cursor: auto ! important; float: none ! important; height: 40px ! important; min-height: 40px ! important; max-height: 40px ! important; width: 320px ! important; min-width: 320px ! important; max-width: 320px ! important; transform: rotate(0deg) translateZ(0px) ! important; transform-origin: 0px 50% 0px ! important; margin: 0px ! important; top: auto ! important; bottom: 0px ! important; right: 10px ! important; left: auto ! important; display: block ! important;" title="chat widget" scrolling="no" src="DashBoard_files/a_006.htm" id="biQva2b-1523568156156" frameborder="0"></iframe><iframe class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; position: fixed ! important; border: 0px none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; display: none ! important; z-index: 1000003 ! important; cursor: auto ! important; float: none ! important; top: auto ! important; bottom: 40px ! important; right: 10px ! important; left: auto ! important; width: 320px ! important; max-width: 320px ! important; min-width: 320px ! important; height: 37px ! important; max-height: 37px ! important; min-height: 37px ! important;" title="chat widget" scrolling="no" src="DashBoard_files/a_006.htm" id="ks6RSi5-1523568156156" frameborder="0"></iframe><iframe class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; position: fixed ! important; border: 0px none ! important; padding: 0px ! important; transition-property: none ! important; cursor: auto ! important; float: none ! important; transform: rotate(0deg) translateZ(0px) ! important; transform-origin: 0px 50% 0px ! important; bottom: 15px ! important; top: auto ! important; right: 4px ! important; left: auto ! important; width: 259px ! important; max-width: 259px ! important; min-width: 259px ! important; height: 90px ! important; max-height: 90px ! important; min-height: 90px ! important; z-index: 1000000 ! important; margin: 0px ! important; display: block ! important;" title="chat widget" scrolling="no" src="DashBoard_files/a_006.htm" id="ikMljcI-1523568156156" frameborder="0"></iframe><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: rgb(255, 255, 255) none repeat scroll 0% 0% ! important; opacity: 0 ! important; top: 1px ! important; bottom: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: auto ! important; height: 45px ! important; display: block ! important; z-index: 999997 ! important; cursor: move ! important; float: none ! important; left: 0px ! important; right: 96px ! important;" id="iRwLWHR-1523568156149"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 96px ! important; bottom: auto ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 6px ! important; height: 100% ! important; display: block ! important; z-index: 999998 ! important; cursor: w-resize ! important; float: none ! important;" id="pvmmcAs-1523568156150"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 0px ! important; bottom: auto ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 6px ! important; height: 100% ! important; display: block ! important; z-index: 999998 ! important; cursor: e-resize ! important; float: none ! important;" id="UhwelHJ-1523568156150"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 0px ! important; bottom: auto ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 100% ! important; height: 6px ! important; display: block ! important; z-index: 999998 ! important; cursor: n-resize ! important; float: none ! important;" id="RMRuFmj-1523568156150"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: 0px ! important; bottom: 0px ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 100% ! important; height: 6px ! important; display: block ! important; z-index: 999998 ! important; cursor: s-resize ! important; float: none ! important;" id="w02J41w-1523568156150"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: auto ! important; bottom: auto ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999998 ! important; cursor: nw-resize ! important; float: none ! important;" id="NGkApR8-1523568156151"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: 0px ! important; bottom: auto ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999998 ! important; cursor: ne-resize ! important; float: none ! important;" id="gQc64Yg-1523568156151"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: auto ! important; bottom: 0px ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999998 ! important; cursor: sw-resize ! important; float: none ! important;" id="JiQ1RJq-1523568156151"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: auto ! important; right: 0px ! important; bottom: 0px ! important; left: auto ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 12px ! important; height: 12px ! important; display: block ! important; z-index: 999999 ! important; cursor: se-resize ! important; float: none ! important;" id="dZxjsmH-1523568156151"></div><div class="" style="outline: medium none ! important; visibility: visible ! important; resize: none ! important; box-shadow: none ! important; overflow: visible ! important; background: transparent none repeat scroll 0% 0% ! important; opacity: 1 ! important; top: 0px ! important; right: auto ! important; bottom: auto ! important; left: 0px ! important; position: absolute ! important; border: 0px none ! important; min-height: auto ! important; min-width: auto ! important; max-height: none ! important; max-width: none ! important; padding: 0px ! important; margin: 0px ! important; transition-property: none ! important; transform: none ! important; width: 100% ! important; height: 100% ! important; display: none ! important; z-index: 1000001 ! important; cursor: move ! important; float: left ! important;"></div></div><iframe title="chat widget logging" style="display: none ! important;" src="DashBoard_files/a_006.htm"></iframe></body></html>
